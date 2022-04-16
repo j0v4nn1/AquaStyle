@@ -37,10 +37,27 @@
                 </ul>
             </nav>
             <div class="sign-up">
-                <button class="sign-up__btn" type="button">
+                <button id="sign-up__btn" class="sign-up__btn" type="button">
                     Записаться на сеанс
                 </button>
             </div>
+        </div>
+        <div id="modal-window-sign-up" class="modal-window-sign-up">
+            <div class="modal-window-sign-up__form" id="modal-window-sign-up__form">
+                <span class="modal-window-sign-up__title">Записаться на сеанс</span>
+                <form action="action_page.php" method="post">
+                    <div class="modal-window-sign-up__name position">
+                        <input type="text" placeholder="Ф.И.О." name="form-name" required>
+                    </div>
+                    <div class="modal-window-sign-up__email position">
+                        <input type="text" placeholder="Ваш email" name="form-email" required>
+                    </div>
+                    <div class="modal-window-sign-up__comment position">
+                        <textarea name="form-comment" placeholder="Комментарий" cols="30" rows="10"></textarea>
+                    </div>
+                </form>
+                <button type="submit">Отправить</button>    
+            </div>   
         </div>
     </header>
 
